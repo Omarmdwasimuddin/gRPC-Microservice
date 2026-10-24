@@ -41,3 +41,10 @@ npx nx generate @nx/nest:app inventory-service
 npx nx generate @nx/nest:app order-service
 ```
 ---
+
+
+####
+```bash
+npm i @grpc/grpc-js @grpc/proto-loader @nestjs/microservices
+```
+---
