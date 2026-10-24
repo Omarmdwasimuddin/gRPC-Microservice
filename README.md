@@ -32,4 +32,6 @@ npx nx generate @nx/nest:app inventory-service
 ```
 <img width="785" height="296" alt="image" src="https://github.com/user-attachments/assets/06649baa-11a6-404f-89d0-ab0d503c6e32" />
 
+<img width="783" height="327" alt="image" src="https://github.com/user-attachments/assets/6996e807-6c6b-456b-9afc-4d7b2c035952" />
+
 ---
