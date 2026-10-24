@@ -21,3 +21,15 @@ npx create-nx-workspace@latest wasuTech-gRPC --preset=nest
 <img width="720" height="620" alt="image" src="https://github.com/user-attachments/assets/1f526712-3da5-402c-b1e2-f327af988012" />
 
 ---
+
+####
+>
+```bash
+cd wasuTech-gRPC
+```
+```bash
+npx nx generate @nx/nest:app inventory-service
+```
+<img width="785" height="296" alt="image" src="https://github.com/user-attachments/assets/06649baa-11a6-404f-89d0-ab0d503c6e32" />
+
+---
