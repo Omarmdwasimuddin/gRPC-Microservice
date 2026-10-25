@@ -48,3 +48,9 @@ npx nx generate @nx/nest:app order-service
 npm i @grpc/grpc-js @grpc/proto-loader "@nestjs/microservices@^11"
 ```
 ---
+
+#### `libs/proto/inventory.proto`
+```ts
+
+```
+---
