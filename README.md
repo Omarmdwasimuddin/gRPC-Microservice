@@ -49,7 +49,7 @@ npm i @grpc/grpc-js @grpc/proto-loader "@nestjs/microservices@^11"
 ```
 ---
 
-#### `libs/proto/inventory.proto`
+#### root directory te---> `libs/proto/inventory.proto`
 ```ts
 
 ```
