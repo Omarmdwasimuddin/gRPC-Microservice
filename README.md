@@ -69,3 +69,9 @@ message StockResponse {
 }
 ```
 ---
+
+#### `inventory-service/src/main.ts`
+```bash
+
+```
+---
