@@ -51,6 +51,21 @@ npm i @grpc/grpc-js @grpc/proto-loader "@nestjs/microservices@^11"
 
 #### root directory te---> `libs/proto/inventory.proto`
 ```ts
+syntax = "proto3";
 
+package inventory;
+
+service InventoryService {
+    rpc CheckStock (StockRequest) returns (StockResponse);
+}
+
+message StockRequest {
+    string productId = 1;
+}
+
+message StockResponse {
+    int32 availableQuantity = 1;
+    bool inStock = 2;
+}
 ```
 ---
