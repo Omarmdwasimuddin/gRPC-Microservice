@@ -170,7 +170,3 @@ StockResponse
 - `StockRequest` হলো request-এর structure; `StockResponse` হলো response-এর structure।
 - `= 1` ও `= 2` হলো Protocol Buffers field number, field value নয়।
 - `CheckStock` এখানে একটি unary RPC: একটি request পাঠানো হয় এবং একটি response ফেরত আসে।
-
-## 5. পরবর্তী ধাপ
-
-পরবর্তী ধাপে NestJS-এ `InventoryService` implement করতে হবে এবং `CheckStock` RPC method-এর handler তৈরি করতে হবে।
