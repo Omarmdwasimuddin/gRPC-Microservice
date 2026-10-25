@@ -1,8 +1,6 @@
-# gRPC Inventory Service — Protocol Buffers
+## gRPC Inventory Service — Protocol Buffers
 
-## 1. সংশোধিত `inventory.proto` কোড
-
-তোমার মূল কোডটি প্রায় সঠিক ছিল। তবে `CheckStock` RPC method-এর response type হিসেবে `StockRequest` না দিয়ে `StockResponse` ব্যবহার করতে হবে।
+## 1.`inventory.proto` কোড
 
 ```protobuf
 syntax = "proto3";
