@@ -94,3 +94,9 @@ async function bootstrap() {
 bootstrap();
 ```
 ---
+
+#### `inventory-service/src/app/app.controller.ts`
+```ts
+
+```
+---
