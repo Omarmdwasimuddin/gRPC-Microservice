@@ -144,3 +144,9 @@ import { join } from 'path';
 export class AppModule {}
 ```
 ---
+
+#### `order-service/src/app/app.controller.ts`
+```ts
+
+```
+---
