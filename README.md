@@ -185,3 +185,26 @@ export class AppController implements OnModuleInit {
 }
 ```
 ---
+
+####
+```bash
+npx nx serve inventory-service
+```
+---
+
+####
+```bash
+npx nx serve order-service
+```
+---
+
+#### Browser e hit koro
+```bash
+localhost:3000/api/order/check-item?pid=123
+```
+```bash
+localhost:3000/api/order/check-item?pid=123
+```
+---
+
+#### OUTPUT
