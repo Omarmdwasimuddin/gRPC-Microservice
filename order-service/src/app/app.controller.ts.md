@@ -1,4 +1,4 @@
-# NestJS Order Service Controller (gRPC Client) ব্যাখ্যা
+## NestJS Order Service Controller (gRPC Client) ব্যাখ্যা
 
 এই কোডটি হলো Order Service-এর REST API Controller, যেটি gRPC ব্যবহার করে `InventoryService` থেকে পণ্যের stock-এর তথ্য সংগ্রহ করে। এরপর stock আছে কি না, তার ভিত্তিতে client-কে HTTP response দেয়।
 
