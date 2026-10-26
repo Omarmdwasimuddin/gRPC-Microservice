@@ -44,13 +44,14 @@ npx nx generate @nx/nest:app order-service
 ---
 
 
-####
+#### Install gRPC Dependencies
 ```bash
 npm i @grpc/grpc-js @grpc/proto-loader "@nestjs/microservices@^11"
 ```
 ---
 
-#### root directory te---> `libs/proto/inventory.proto`
+#### Create the gRPC Protocol Buffer Definition
+##### root directory te---> `libs/proto/inventory.proto`
 ```ts
 syntax = "proto3";
 
