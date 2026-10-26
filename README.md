@@ -1,7 +1,7 @@
 ## gRPC Microservices with NestJS and Nx
 
 
-####
+#### Create a NestJS Nx Workspace
 ```bash
 npx create-nx-workspace@latest wasuTech-gRPC --preset=nest
 ```
@@ -22,12 +22,13 @@ npx create-nx-workspace@latest wasuTech-gRPC --preset=nest
 
 ---
 
-####
->
+#### Navigate to the Project Directory
 ```bash
 cd wasuTech-gRPC
 ```
-```bash
+---
+#### Generate the Inventory Service
+```bash 
 npx nx generate @nx/nest:app inventory-service
 ```
 <img width="785" height="296" alt="image" src="https://github.com/user-attachments/assets/06649baa-11a6-404f-89d0-ab0d503c6e32" />
@@ -36,7 +37,7 @@ npx nx generate @nx/nest:app inventory-service
 
 ---
 
-####
+#### Generate the Order Service
 ```bash
 npx nx generate @nx/nest:app order-service
 ```
