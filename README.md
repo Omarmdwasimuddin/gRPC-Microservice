@@ -203,8 +203,11 @@ npx nx serve order-service
 localhost:3000/api/order/check-item?pid=123
 ```
 ```bash
-localhost:3000/api/order/check-item?pid=123
+localhost:3000/api/order/check-item?pid=456
 ```
 ---
 
 #### OUTPUT
+<img width="485" height="157" alt="image" src="https://github.com/user-attachments/assets/cb6b7048-bf85-49c4-ae82-9417e7c0789f" />
+
+<img width="494" height="172" alt="image" src="https://github.com/user-attachments/assets/fc12535a-f2c6-464b-a1fe-f45f378882ae" />
