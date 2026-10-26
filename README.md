@@ -111,7 +111,7 @@ export class AppController {
     const qty = items[data.productId] || 0;
     return { 
       availableQuantity: qty,
-      isStock: qty > 0, 
+      inStock: qty > 0, 
     };
   }
 }
@@ -171,7 +171,7 @@ export class AppController implements OnModuleInit {
       this.inventoryService.checkStock({ productId: pid })
     )
     
-    if(stockStatus.isStock) {
+    if(stockStatus.inStock) {
       return {
         status: 'Available',
         quantity: stockStatus.availableQuantity
