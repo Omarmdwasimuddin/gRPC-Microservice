@@ -51,7 +51,7 @@ npm i @grpc/grpc-js @grpc/proto-loader "@nestjs/microservices@^11"
 ---
 
 #### Create the gRPC Protocol Buffer Definition
-##### root directory te---> `libs/proto/inventory.proto`
+> root directory te---> `libs/proto/inventory.proto`
 ```ts
 syntax = "proto3";
 
@@ -72,7 +72,8 @@ message StockResponse {
 ```
 ---
 
-#### `inventory-service/src/main.ts`
+#### Configure the Inventory gRPC Server
+> `inventory-service/src/main.ts`
 ```ts
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
@@ -97,7 +98,8 @@ bootstrap();
 ```
 ---
 
-#### `inventory-service/src/app/app.controller.ts`
+#### Implement the Inventory Stock Check Handler
+> `inventory-service/src/app/app.controller.ts`
 ```ts
 import { Controller } from '@nestjs/common';
 import { GrpcMethod } from '@nestjs/microservices';
@@ -120,7 +122,8 @@ export class AppController {
 ```
 ---
 
-#### `order-service/src/app/app.module.ts`
+#### Configure the gRPC Client in Order Service
+> `order-service/src/app/app.module.ts`
 ```ts
 import { Module } from '@nestjs/common';
 import { ClientsModule, Transport } from '@nestjs/microservices';
@@ -147,7 +150,8 @@ export class AppModule {}
 ```
 ---
 
-#### `order-service/src/app/app.controller.ts`
+#### Implement the Order Service Controller
+> `order-service/src/app/app.controller.ts`
 ```ts
 import { Controller, Get, Inject, OnModuleInit, Query, } from '@nestjs/common';
 import { Observable, lastValueFrom } from 'rxjs';
@@ -188,19 +192,19 @@ export class AppController implements OnModuleInit {
 ```
 ---
 
-####
+#### Start the Inventory gRPC Service
 ```bash
 npx nx serve inventory-service
 ```
 ---
 
-####
+#### Start the Order Service
 ```bash
 npx nx serve order-service
 ```
 ---
 
-#### Browser e hit koro
+#### Test the gRPC Communication Using Browser
 ```bash
 localhost:3000/api/order/check-item?pid=123
 ```
